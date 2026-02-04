@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Scriptora Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="index.html">Scriptora Labs</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <a class="nav-cta" href="contact.html">Start a Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-hero">
+      <div>
+        <p class="eyebrow">CONTACT SCRIPTORA LABS</p>
+        <h1>Start Your Project</h1>
+        <p>Send us your brief, files, and ideas. We'll respond with a tailored plan.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=900&q=80" alt="Contact workspace" />
+    </section>
+
+    <section class="section contact-section">
+      <form class="contact-form" action="https://formspree.io/f/yourFormId" method="POST" enctype="multipart/form-data">
+        <div class="form-row">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your full name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </label>
+        </div>
+        <label>
+          Project Description
+          <textarea name="message" rows="6" placeholder="Tell us about your story, script, or website needs." required></textarea>
+        </label>
+        <label>
+          File Upload (images, pdf, doc)
+          <input type="file" name="attachment" accept="image/*,.pdf,.doc,.docx" />
+        </label>
+        <button class="btn primary" type="submit">Send Project</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Direct Contact</h3>
+        <p>Email: <a href="mailto:scriptoralabs@gmail.com">scriptoralabs@gmail.com</a></p>
+        <p>Location: Remote (India)</p>
+        <div class="contact-card">
+          <h4>Need a faster response?</h4>
+          <p>Upload your project files and we will reply within 24-48 hours.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Scriptora Labs</h3>
+        <p>Modern creative studio for stories, scripts, and web experiences.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p>Email: scriptoralabs@gmail.com</p>
+        <p>Location: Remote (India)</p>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 Scriptora Labs. Crafted with creativity & AI.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
