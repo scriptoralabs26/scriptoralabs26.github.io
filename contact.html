@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Scriptora Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="index.html">Scriptora <span>Labs</span></a>
+      <button class="nav-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">Let’s collaborate</p>
+        <h1>Start Your Project</h1>
+        <p>Send your idea, references, or scripts and we will craft a tailored creative plan.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Team collaboration" />
+    </section>
+
+    <section class="section contact-section">
+      <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST" enctype="multipart/form-data">
+        <div class="form-grid">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </label>
+        </div>
+        <label>
+          Project Description
+          <textarea name="message" rows="5" placeholder="Tell us about your story, script, or website needs" required></textarea>
+        </label>
+        <label>
+          Upload Project Files
+          <input type="file" name="upload" accept="image/*,.pdf,.doc,.docx" />
+        </label>
+        <button class="btn primary" type="submit">Send Project</button>
+        <p class="form-note">Integrate Formspree by replacing the form action URL with your project endpoint.</p>
+      </form>
+
+      <div class="contact-info">
+        <h3>Studio Contact</h3>
+        <p>Email: scriptoralabs@gmail.com</p>
+        <p>Location: Remote (India)</p>
+        <div class="contact-card">
+          <h4>What to expect</h4>
+          <ul>
+            <li>Response within 24-48 hours</li>
+            <li>Creative brief &amp; timeline</li>
+            <li>Dedicated project manager</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <a class="logo" href="index.html">Scriptora <span>Labs</span></a>
+        <p>Modern scripts, stories, and websites for creators who want a cinematic digital presence.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="blog.html">Blog</a>
+        <a href="post.html">Latest Post</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: scriptoralabs@gmail.com</p>
+        <p>Location: Remote (India)</p>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 Scriptora Labs. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
